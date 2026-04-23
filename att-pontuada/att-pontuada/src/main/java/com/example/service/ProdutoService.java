@@ -15,4 +15,26 @@ public class ProdutoService {
     public List<ProdutoModel>listarTodos(){
         return repository.findAll();
     }
+
+    public ProdutoModel salvar(ProdutoModel produto) {
+        if (repository.findByLote(produto.getLote()).isPresent()){
+            throw new RuntimeException("Produto já cadastrado.");
+        }
+        return repository.save(produto);
+    }
+
+    public ProdutoModel atualizarProduto(Long id, ProdutoModel produto){
+        if (!repository.existsById(id)){
+            throw new IllegalArgumentException("Produto não encontrado.");
+        }
+        produto.setId(id);
+        return repository.save(produto);
+    }
+
+    public void excluir(Long id){
+        if (!repository.existsById(id)){
+            throw new IllegalArgumentException("Produto não encontrado.");
+        }
+        repository.deleteById(id);
+    }
 }

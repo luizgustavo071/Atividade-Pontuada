@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface ProdutoRepository extends JpaRepository<FuncionarioModel, Long> {
-    Optional<ProdutoModel>findByEmail(String email);
+public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long> {
+    Optional<ProdutoModel>findByLote(String lote);
 }
