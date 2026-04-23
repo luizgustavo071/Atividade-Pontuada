@@ -18,7 +18,7 @@ public class ClienteController  {
     private ClienteService service;
 
     @GetMapping
-    public List<ClienteModel> litar() {
+    public List<ClienteModel> listar() {
         return service.listarTodos();
     }
     @PostMapping

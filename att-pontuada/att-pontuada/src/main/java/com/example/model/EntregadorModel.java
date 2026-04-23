@@ -3,8 +3,8 @@ package com.example.model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "tab_cliente")
-public class ClienteModel {
+@Table(name = "tab_entregador")
+public class EntregadorModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -12,18 +12,20 @@ public class ClienteModel {
     private String nome;
     private String email;
     private String telefone;
-    private String formaPagamento;
+    private String placa;
+    private String tipoVeiculo;
     private String endereco;
 
-    public ClienteModel() {
+    public EntregadorModel() {
     }
 
-    public ClienteModel(Long id, String nome, String email, String telefone, String formaPagamento, String endereco) {
+    public EntregadorModel(Long id, String nome, String email, String telefone, String placa, String tipoVeiculo, String endereco) {
         this.id = id;
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
-        this.formaPagamento = formaPagamento;
+        this.placa = placa;
+        this.tipoVeiculo = tipoVeiculo;
         this.endereco = endereco;
     }
 
@@ -59,12 +61,20 @@ public class ClienteModel {
         this.telefone = telefone;
     }
 
-    public String getFormaPagamento() {
-        return formaPagamento;
+    public String getPlaca() {
+        return placa;
     }
 
-    public void setFormaPagamento(String formaPagamento) {
-        this.formaPagamento = formaPagamento;
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public String getTipoVeiculo() {
+        return tipoVeiculo;
+    }
+
+    public void setTipoVeiculo(String tipoVeiculo) {
+        this.tipoVeiculo = tipoVeiculo;
     }
 
     public String getEndereco() {
