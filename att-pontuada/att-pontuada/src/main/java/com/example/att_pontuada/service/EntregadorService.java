@@ -1,7 +1,7 @@
-package com.example.service;
+package com.example.att_pontuada.service;
 
-import com.example.model.EntregadorModel;
-import com.example.repository.EntregadorRepository;
+import com.example.att_pontuada.model.EntregadorModel;
+import com.example.att_pontuada.repository.EntregadorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

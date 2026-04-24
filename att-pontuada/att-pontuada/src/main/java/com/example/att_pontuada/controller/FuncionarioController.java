@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.example.att_pontuada.controller;
 
-import com.example.model.FuncionarioModel;
-import com.example.service.FuncionarioService;
+import com.example.att_pontuada.model.FuncionarioModel;
+import com.example.att_pontuada.service.FuncionarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,9 +13,11 @@ import java.util.Map;
 @RestController
 @RequestMapping("/funcionarios")
 public class FuncionarioController {
-    @Autowired
 
+    @Autowired
     private FuncionarioService service;
+
+
     @GetMapping
     public List<FuncionarioModel>listarFuncionarios(){
         return service.listarTodos();

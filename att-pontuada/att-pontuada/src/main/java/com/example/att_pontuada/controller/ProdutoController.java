@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.example.att_pontuada.controller;
 
-import com.example.model.ProdutoModel;
-import com.example.service.ProdutoService;
+import com.example.att_pontuada.model.ProdutoModel;
+import com.example.att_pontuada.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

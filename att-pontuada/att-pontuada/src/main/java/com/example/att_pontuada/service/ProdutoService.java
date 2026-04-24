@@ -1,7 +1,7 @@
-package com.example.service;
+package com.example.att_pontuada.service;
 
-import com.example.model.ProdutoModel;
-import com.example.repository.ProdutoRepository;
+import com.example.att_pontuada.model.ProdutoModel;
+import com.example.att_pontuada.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

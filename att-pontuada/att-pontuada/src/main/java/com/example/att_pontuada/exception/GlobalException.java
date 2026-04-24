@@ -1,4 +1,4 @@
-package com.example.exception;
+package com.example.att_pontuada.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.example.model;
+package com.example.att_pontuada.model;
 
 import jakarta.persistence.*;
 
